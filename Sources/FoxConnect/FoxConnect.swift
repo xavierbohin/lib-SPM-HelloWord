@@ -1,6 +1,9 @@
-public struct FoxConnect {
-    public private(set) var text = "Hello, World updated!"
+import UIKit
 
-    public init() {
+extension UIColor {
+    class var xavTheme: UIColor {
+        return UIColor { (traitCollection) -> UIColor in
+            return traitCollection.userInterfaceStyle == .light ? .black : .white
+        }
     }
 }
